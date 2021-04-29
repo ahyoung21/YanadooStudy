@@ -1,0 +1,56 @@
+.card-area {
+  padding: 50px 0;
+  text-align: center;
+}
+.card-area h2 {
+  font-weight: normal;
+  font-size: 25px;
+}
+.card-area h2 + strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.card-area .swiper-container {
+  margin-top: 50px;
+}
+.card-area .swiper-container .swiper-slide .card-slide-item {
+  max-height: 300px;
+  padding: 50px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.card-area .swiper-container .card-tit-area {
+  text-align: left;
+}
+.card-area .swiper-container a {
+  max-height: 500px;
+  display: block;
+}
+.card-area .swiper-container .card-tit-area .card-tit {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+.card-area .swiper-container .card-desc-area {
+  margin-top: 80px;
+  text-align: right;
+}
+.card-area .swiper-container .card-desc-area .default-price {
+  text-decoration: line-through;
+}
+.card-area .swiper-container .discount-area {
+  margin-top: 10px;
+}
+.card-area .swiper-container .discount-area .discount {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2;
+  color: red;
+}
+.card-area .swiper-container .discount-area .discount-price {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}

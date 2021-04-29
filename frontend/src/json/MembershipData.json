@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "packageNumber": "0001",
+    "mainTitle": "영어 완전정복 멤버십",
+    "subTitle": "A부터 Z까지 알려주는 영어의 모든것!",
+    "defaultPrice": "360,000",
+    "discount": "72% 할인",
+    "price": "99,000"
+  },
+  {
+    "id": 2,
+    "packageNumber": "0002",
+    "mainTitle": "부동산 재테크 완전정복 멤버십",
+    "subTitle": "부동산 재테크 한번에 끝내기!",
+    "defaultPrice": "594,000",
+    "discount": "83% 할인",
+    "price": "199,000"
+  },
+  {
+    "id": 3,
+    "packageNumber": "0003",
+    "mainTitle": "영어 완전정복 멤버십",
+    "subTitle": "A부터 Z까지 알려주는 영어의 모든것!",
+    "defaultPrice": "360,000",
+    "discount": "91% 할인",
+    "price": "299,000"
+  },
+  {
+    "id": 4,
+    "packageNumber": "0004",
+    "mainTitle": "영어 완전정복 멤버십",
+    "subTitle": "A부터 Z까지 알려주는 영어의 모든것!",
+    "defaultPrice": "360,000",
+    "discount": "72% 할인",
+    "price": "79,000"
+  },
+  {
+    "id": 5,
+    "packageNumber": "0005",
+    "mainTitle": "영어 완전정복 멤버십",
+    "subTitle": "A부터 Z까지 알려주는 영어의 모든것!",
+    "defaultPrice": "360,000",
+    "discount": "83% 할인",
+    "price": "99,000"
+  },
+  {
+    "id": 6,
+    "packageNumber": "0006",
+    "mainTitle": "영어 완전정복 멤버십",
+    "subTitle": "A부터 Z까지 알려주는 영어의 모든것!",
+    "defaultPrice": "360,000",
+    "discount": "72% 할인",
+    "price": "99,000"
+  }
+]

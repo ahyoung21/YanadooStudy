@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "packageNumber": "0001",
+    "mainTitle": "평생수강 첫세일 프로모션",
+    "subTitle": "4월, 새 출발 응원 혜택이 가득한4월",
+    "imageURL": "https://english.yanadoocdn.com/upload/2021/04/pc_1619161419806.png"
+  },
+  {
+    "id": 2,
+    "packageNumber": "0002",
+    "mainTitle": "밀착케어 90일 완주반",
+    "subTitle": "이번에 꼭 성공하고 싶은 당신을 위한1:1 밀착케어",
+    "imageURL": "https://english.yanadoocdn.com/upload/2021/04/3_Bigbanner_pc_ff534d_1618897275885.jpg"
+  },
+  {
+    "id": 3,
+    "packageNumber": "0003",
+    "mainTitle": "오디오 영어 패키지",
+    "subTitle": "음악 대신 재밌게 들으세요 음악 대신 재밌게 들으세요 음악 대신 재밌게 들으세요",
+    "imageURL": "https://english.yanadoocdn.com/upload/2021/03/210318_big_PC_1616144528399.jpg"
+  },
+  {
+    "id": 4,
+    "packageNumber": "0004",
+    "mainTitle": "에어팟 0원 득템까지",
+    "subTitle": "무료 학습 상담 받고 무료 학습",
+    "imageURL": "https://english.yanadoocdn.com/upload/2020/12/3_Bigbanner_pc_ebebeb_1609217271367.jpg"
+  },
+  {
+    "id": 5,
+    "packageNumber": "0005",
+    "mainTitle": "평생수강 첫세일 프로모션",
+    "subTitle": "4월, 새 출발 응원 혜택이 가득한4월",
+    "imageURL": "https://english.yanadoocdn.com/upload/2020/12/3_Bigbanner_pc_ea5104_1609217182024.jpg"
+  },
+  {
+    "id": 6,
+    "packageNumber": "0006",
+    "mainTitle": "밀착케어 90일 완주반",
+    "subTitle": "이번에 꼭 성공하고 싶은 당신을 위한",
+    "imageURL": "https://english.yanadoocdn.com/upload/2020/12/bigpc_1607670434527.jpg"
+  },
+  {
+    "id": 7,
+    "packageNumber": "0007",
+    "mainTitle": "오디오 영어 패키지",
+    "subTitle": "음악 대신 재밌게 들으세요",
+    "imageURL": "https://english.yanadoocdn.com/upload/2021/01/pc_1611134775738.jpg"
+  },
+  {
+    "id": 8,
+    "packageNumber": "0008",
+    "mainTitle": "에어팟 0원 득템까지",
+    "subTitle": "무료 학습 상담 받고 무료",
+    "imageURL": "https://english.yanadoocdn.com/upload/2021/03/3_audio_Bigbanner_pc_crop_1617181015048.png"
+  }
+]

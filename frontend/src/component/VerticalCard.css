@@ -1,0 +1,63 @@
+.vertical-card-area {
+  padding: 50px 0;
+  text-align: center;
+}
+.vertical-card-area h2 {
+  font-weight: normal;
+  font-size: 25px;
+}
+.vertical-card-area h2 + strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.vertical-card-area .swiper-container {
+  margin-top: 50px;
+}
+.vertical-card-area .swiper-container {
+  height: 300px !important;
+  overflow: hidden;
+}
+.vertical-card-area .swiper-container .swiper-slide {
+  height: 142px !important;
+}
+.vertical-card-area .swiper-container .swiper-slide .card-slide-item {
+  max-height: 300px;
+  padding: 50px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.vertical-card-area .swiper-container .card-tit-area {
+  text-align: left;
+}
+.vertical-card-area .swiper-container a {
+  max-height: 500px;
+  display: block;
+}
+.vertical-card-area .swiper-container .card-tit-area .card-tit {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+.vertical-card-area .swiper-container .card-desc-area {
+  margin-top: 80px;
+  text-align: right;
+}
+.vertical-card-area .swiper-container .card-desc-area .default-price {
+  text-decoration: line-through;
+}
+.vertical-card-area .swiper-container .discount-area {
+  margin-top: 10px;
+}
+.vertical-card-area .swiper-container .discount-area .discount {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2;
+  color: red;
+}
+.vertical-card-area .swiper-container .discount-area .discount-price {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
