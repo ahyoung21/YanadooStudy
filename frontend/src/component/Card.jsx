@@ -79,6 +79,7 @@ const Card = () => {
             delay: 1000,
             disableOnInteraction: false,
           }}
+          loop={true}
           // scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}

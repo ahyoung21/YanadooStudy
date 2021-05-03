@@ -1,8 +1,51 @@
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 100;
+  src: local('SpoqaHanSansThin'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansThin.woff2)
+      format('woff2'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansThin.woff)
+      format('woff'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansThin.ttf)
+      format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 300;
+  src: local('SpoqaHanSansLight'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansLight.woff2)
+      format('woff2'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansLight.woff)
+      format('woff'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansLight.ttf)
+      format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 500;
+  src: local('SpoqaHanSansRegular'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansRegular.woff2)
+      format('woff2'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansRegular.woff)
+      format('woff'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansRegular.ttf)
+      format('truetype');
+}
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  font-weight: 800;
+  src: local('SpoqaHanSansBold'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansBold.woff2)
+      format('woff2'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansBold.woff)
+      format('woff'),
+    url(https://english.yanadoocdn.com/upload/yanadoo/font/SpoqaHanSansBold.ttf)
+      format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Spoqa Han Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

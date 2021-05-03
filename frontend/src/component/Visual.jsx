@@ -8,6 +8,7 @@ import SwiperCore, {
   Autoplay,
 } from 'swiper';
 import BigBannerData from '../json/BigBannerData.json';
+import './Visual.css';
 
 //style
 import 'swiper/swiper.scss';
