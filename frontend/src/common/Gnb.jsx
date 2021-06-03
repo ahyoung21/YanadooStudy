@@ -1,12 +1,8 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBars,
-  faSearch,
-  faShoppingCart,
-} from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Gnb.css';
 
 const Gnb = () => {
@@ -21,8 +17,14 @@ const Gnb = () => {
   });
   const languageText = isPc ? '웹페이지' : '모바일';
 
+  const mobileMenu = useRef();
+  const [menuFlag, setMenuFlag] = useState(false);
+  const openLnbMenu = () => {
+    setMenuFlag(!menuFlag);
+  };
+
   return (
-    <header>
+    <header className={menuFlag ? 'active' : null}>
       <div>
         {isPc && <p>HI PC</p>}
         {isTablet && <p>HI Tablet</p>}
@@ -30,6 +32,27 @@ const Gnb = () => {
         {languageText}
       </div>
       <div className='inner'>
+        {isMobile && (
+          <div className='mobile-menu'>
+            <a href='#;' className='btn-menu' onClick={openLnbMenu} ref={mobileMenu}>
+              <FontAwesomeIcon icon={faBars} />
+              <span className='blind'>메뉴</span>
+            </a>
+          </div>
+        )}
+        <div className='bg-dimmed' onClick={openLnbMenu}></div>
+        {isMobile && (
+          <aside className='mobile-left-menu'>
+            <ul>
+              <li>menu1</li>
+              <li>menu2</li>
+              <li>menu3</li>
+              <li>menu4</li>
+              <li>menu5</li>
+            </ul>
+          </aside>
+        )}
+
         <h1 className='logo'>
           <a href='#;' className='btn-logo'>
             <img src='/images/img-logo.png' alt='' />
@@ -82,30 +105,19 @@ const Gnb = () => {
             </a>
           </div>
         )}
-        {isPc && (
-          <div className='user-menu-login'>
-            <span className='user-name'>
-              <strong>유아영</strong> 회원님
-            </span>
-            <a href='#;' className='btn-user-info'>
-              <span>마이페이지</span>
-            </a>
-            <a href='#;' className='btn-shopping-basket'>
-              <FontAwesomeIcon icon={faShoppingCart} />
-              <span className='blind'>장바구니</span>
-            </a>
-          </div>
-        )}
+        <div className='user-menu-login'>
+          <span className='user-name'>
+            <strong>유아영</strong> 회원님
+          </span>
+          <a href='#;' className='btn-user-info'>
+            <span>마이페이지</span>
+          </a>
+          <a href='#;' className='btn-shopping-basket'>
+            <FontAwesomeIcon icon={faShoppingCart} />
+            <span className='blind'>장바구니</span>
+          </a>
+        </div>
         {/* 로그인 후  */}
-
-        {isMobile && (
-          <div className='mobile-menu'>
-            <a href='#;' className='btn-menu'>
-              <FontAwesomeIcon icon={faBars} />
-              <span className='blind'>메뉴</span>
-            </a>
-          </div>
-        )}
       </div>
     </header>
   );

@@ -6,6 +6,14 @@ header .inner {
   min-height: 60px;
   padding: 0 20px;
 }
+header.active .mobile-left-menu {
+  -webkit-transform: translateX(316px);
+  -ms-transform: translateX(316px);
+  transform: translateX(316px);
+}
+header.active .bg-dimmed {
+  display: block;
+}
 
 .logo .btn-logo {
   display: block;
@@ -45,10 +53,37 @@ header .inner {
   display: inline-block;
   margin: 0 10px;
 }
-
+.bg-dimmed {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
 .mobile-menu {
-  margin-left: auto;
+  margin-right: 20px;
 }
 .mobile-menu .btn-menu {
   font-size: 23px;
+}
+.mobile-left-menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  flex-direction: column;
+  left: -316px;
+  width: 316px;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+.mobile-left-menu ul {
+  padding: 50px;
+}
+.mobile-left-menu ul li + li {
+  margin-top: 20px;
 }

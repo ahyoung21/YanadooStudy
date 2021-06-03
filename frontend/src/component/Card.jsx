@@ -3,13 +3,7 @@ import styled, { css } from 'styled-components';
 import { useMediaQuery } from 'react-responsive';
 import './Card.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import MembershipData from '../json/MembershipData.json';
 
 //style
@@ -81,8 +75,8 @@ const Card = () => {
           }}
           loop={true}
           // scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
           centeredSlides={true}
           breakpoints={{
             // when window width is >= 768
