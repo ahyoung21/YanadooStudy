@@ -98,8 +98,12 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
+html, body {
+  font-size: 10px;
+  line-height: 1.2;
+}
+body * {
+  box-sizing: border-box;
 }
 ol,
 ul {
@@ -200,7 +204,9 @@ img {
   -webkit-box-orient: vertical;
 }
 
-.inner {
-  max-width: 1060px;
-  margin: 0 auto;
+
+.inner-col {
+  position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
 }
