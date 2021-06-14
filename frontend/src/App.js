@@ -5,6 +5,7 @@ import VerticalCard from './component/VerticalCard';
 import Visual from './component/Visual';
 import Footer from './common/Footer';
 import DetailCard from './component/DetailCard';
+import CommunityCard from './common/CommunityCard';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* <Visual />
       <Card />
       <VerticalCard /> */}
+      <CommunityCard />
       <Footer />
     </>
   );
