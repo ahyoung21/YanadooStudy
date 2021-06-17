@@ -1,9 +1,10 @@
 import React from 'react';
-import './Footer.css';
+import './common.scss';
 
 const CommunityCard = () => {
     return (
         <>
+            <div className='test'>사스테스트중</div>
             <div className='community-card-col'>
                 <div className='inner-col'>
                     <div

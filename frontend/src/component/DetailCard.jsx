@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import BigBannerData from '../json/BigBannerData.json';
-import '../common/Footer.css';
+import '../common/Footer.scss';
 
 //style
 import 'swiper/swiper.scss';
@@ -49,7 +49,7 @@ const DetailCard = () => {
     const thumbNail = useRef();
     const [currentCase, setCurrentCase] = useState(0);
     const [flag, setFlag] = useState(false);
-    const [bgImage, setBgimage] = useState(`url(${BigBannerData[0].imageURL})`);
+    const [bgImage, setBgimage] = useState(`${BigBannerData[0].imageURL}`);
 
     const [modalPopup, setModalPopup] = useState(false);
     const [imgWidth, setImageWidth] = useState(null);
@@ -64,8 +64,8 @@ const DetailCard = () => {
         if (thumbItem.current.id === 6) {
             // console.log('6666');
         }
-        console.log(bgImage);
-        console.log(url2);
+        // console.log(`bgImage는 ===== ${bgImage}`);
+        // console.log(url2);
     }, []);
 
     // function currentSelector(e){
@@ -86,9 +86,18 @@ const DetailCard = () => {
 
             // console.log('---------------');
             // console.log(e.target.id);
+            let url = e.target.style.backgroundImage;
             setCurrentCase(e.target.id);
-            // console.log(e.target.style.backgroundImage)
-            setBgimage(e.target.style.backgroundImage);
+            // let re = /(?!url)[^(^)^"+]./gm;
+            // let re = /(?:url\(\")([a-zA-Z0-9.:/\\-]+)(?:\"\))/gm;
+            let urlRegex = /(?:https?\:\/\/)?([a-zA-Z0-9.:/_-]+)/gm;
+            let urlResult = url.match(urlRegex);
+            console.log(urlResult[1]);
+            console.log('----------------');
+            // console.log(e.target.style.backgroundImage.substring(5, e.target.style.backgroundImage.length - 2));
+            console.log(e.target.style.backgroundImage);
+            setBgimage(urlResult[1]);
+            // setBgimage(e.target.style.backgroundImage.substring(5, e.target.style.backgroundImage.length - 2));
         },
         [bgImage, currentCase]
     );
@@ -98,10 +107,10 @@ const DetailCard = () => {
         document.body.classList.add('modal-open');
         setModalPopup(!modalPopup);
         const url = bgImage.substring(4, bgImage.length - 1);
-        console.log(url);
-        console.log(`이건 naturalWidth: ${e.target.naturalWidth}`);
-        console.log(e.target.offsetWidth);
-        console.log(e.target.offsetHeight);
+        // console.log(url);
+        // console.log(`이건 naturalWidth: ${e.target.naturalWidth}`);
+        // console.log(e.target.offsetWidth);
+        // console.log(e.target.offsetHeight);
         setImageWidth(e.target.naturalWidth);
         setImageHeight(e.target.naturalHeight);
     }, []);
@@ -113,10 +122,10 @@ const DetailCard = () => {
     }, []);
 
     useEffect(() => {
-        console.log('start');
-        console.log(BigBannerData.length);
-        console.log('-------------');
-        console.log(thumbItem.current);
+        // console.log('start');
+        // console.log(BigBannerData.length);
+        // console.log('-------------');
+        // console.log(thumbItem.current);
         thumbItem.current.classList.add('hide');
         if (BigBannerData.length > 1) {
             thumbItemActive();
@@ -193,7 +202,7 @@ const DetailCard = () => {
                             // }}
                             onClick={openPopup}
                         >
-                            <img src={url2} alt='' />
+                            <img src={bgImage} alt='' />
                             <div className='tag-lists'>
                                 <span className='ico-tag red'>TOP 1 인기 추천</span>
                                 <span className='ico-tag'>일이삼사오육칠팔구십</span>

@@ -1,0 +1,6 @@
+@use './Footer.scss';
+$myColor: red;
+
+.test {
+    color: $myColor;
+}
